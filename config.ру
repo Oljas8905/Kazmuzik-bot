@@ -1,0 +1,11 @@
+API_ID = 29577793
+API_HASH = "4a2fc11456b3542cd465d7c687204c57"
+BOT_TOKEN = "7563601552:AAHRypkuqM7qnsMndN0ZwU1Wp8qog8O72bE"
+
+SOURCE_CHANNELS = [
+    "@QazaqstanMusic",
+    "@KazMusic2024",
+    "@Qazaq_An"
+]
+
+TARGET_CHANNEL = "@rakhatov_aybek"
