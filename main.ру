@@ -1,0 +1,10 @@
+from pyrogram import Client, filters
+from config import API_ID, API_HASH, BOT_TOKEN, SOURCE_CHANNELS, TARGET_CHANNEL
+
+app = Client("kazmusic", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+
+@app.on_message(filters.audio & filters.chat(SOURCE_CHANNELS))
+async def repost_audio(client, message):
+    await message.copy(chat_id=TARGET_CHANNEL)
+
+app.run()
